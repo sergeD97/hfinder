@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    tools:context="com.hfinder.LoginActivity">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:alpha="0.6"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HouseFinder"
+        android:textSize="40sp"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="authentification"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/et_email_login"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="10dp"
+        android:hint="adresse email"
+        android:textColorHint="#cccccc"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+
+        android:drawableLeft="@drawable/ic_pass"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:hint="Mot de passe"
+        android:textSize="17sp"
+        android:textColorHint="#cccccc"
+        android:textColor="#FFFFFF"
+        android:id="@+id/et_pwd_login"
+        android:layout_below="@+id/et_email_login"
+        android:layout_alignLeft="@+id/et_email_login"
+        android:layout_alignStart="@+id/et_email_login"
+        android:layout_alignRight="@+id/et_email_login"
+        android:layout_alignEnd="@+id/et_email_login" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="se connecter"
+        android:id="@+id/bt_login"
+        android:layout_below="@+id/et_pwd_login"
+        android:layout_marginTop="45dp"
+        android:layout_alignLeft="@+id/et_pwd_login"
+        android:layout_alignStart="@+id/et_pwd_login"
+        android:layout_alignRight="@+id/et_pwd_login"
+        android:layout_alignEnd="@+id/et_pwd_login" />
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pwd_login"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/tv_error_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pwd_login"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_red"
+
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="copyright HouseFinder 2018 \n All right reserved"
+        android:textColor="#FFFFFF"
+        android:alpha="0.6"
+        android:id="@+id/textView4"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="41dp"
+        android:layout_alignRight="@+id/bt_login"
+        android:layout_alignEnd="@+id/bt_login"
+        android:layout_alignLeft="@+id/bt_login"
+        android:layout_alignStart="@+id/bt_login" />
+
+    <TextView
+        android:id="@+id/bt_insc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textSize="14sp"
+        android:text="Pas encore Inscrit(e)? Inscriver vous"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
